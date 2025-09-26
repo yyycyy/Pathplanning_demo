@@ -231,7 +231,6 @@ public:
                 nowCost.cost=Euler_distance;
                 frontier.push(nowCost);
             }
-
             double dx=loc.x-frontier.top().location.x;
             double dy=loc.y-frontier.top().location.y;
 

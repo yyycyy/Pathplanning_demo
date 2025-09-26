@@ -12,9 +12,11 @@ find_package(SFML 2.5 COMPONENTS graphics window system REQUIRED)
 
 add_executable(Astar src/Astar.cpp)
 add_executable(RRT src/RRT.cpp)
+add_executable(RRTstart src/RRTstart.cc)
 
 target_include_directories(Astar PRIVATE ${OpenCV_INCLUDE_DIRS})
 target_include_directories(RRT PRIVATE ${OpenCV_INCLUDE_DIRS})
 
 target_link_libraries(Astar sfml-graphics sfml-window sfml-system ${OpenCV_LIBS})
 target_link_libraries(RRT sfml-graphics sfml-window sfml-system ${OpenCV_LIBS})
+target_link_libraries(RRTstart sfml-graphics sfml-window sfml-system ${OpenCV_LIBS})
